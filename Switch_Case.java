@@ -3,18 +3,21 @@ public class Switch_Case {
         
         char name = 'A';
 
-        switch(name){
-            case 'A':
+        switch(name){//Defining the switch variable as name
+            case 'A'://checking for A
                 System.out.println("Very good!");
-                break;
-            case 'B':
+                break;//if true then get s breaked
+
+            case 'B'://Chcking for B
                 System.out.println("It's average!");
-                break;
-            case 'C':
+                break;//if true then gets breaked
+
+            case 'C'://Checking for C
                 System.out.println("It is very bad");
-                break;
-            default:
-                System.out.println("Wrong Argument")
+                break;//if yes gets breaked
+
+            default://If nothing matches then this executes
+                System.out.println("Wrong Argument");
         }
     }
 }
