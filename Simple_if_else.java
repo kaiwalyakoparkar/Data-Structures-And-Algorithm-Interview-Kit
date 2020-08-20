@@ -14,6 +14,8 @@ public class Simple_if_else {
         else{
             System.out.println("Sorry You Cannot Vote yet!");//If False
         }
+        sc.close();
         
     }
+
 }

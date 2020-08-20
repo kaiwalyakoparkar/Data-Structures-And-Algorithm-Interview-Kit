@@ -23,5 +23,6 @@ public class Taking_user_input {
         System.out.println("Entered Name is : ");
         System.out.println(name);
        
+        sc.close();
     }
 }
