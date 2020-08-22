@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Taking_user_input {
     
-    public static void public static void main(String[] args) {
+    public static void main(String[] args) {
         
         //using scanner as a datatype as sc as a name
         System.out.println("Enter Your Age : ");

@@ -1,8 +1,8 @@
 public class Operators{
-	public static class main(string[] args){
+	public static class main(String[] args){
 		int firstNumber = 13;
 		int secondNumber = 15;
-		int sum = firstNumber + secondNumber;
+		int sum = (firstNumber + secondNumber);
         System.out.println(sum);
         /*
         double sum = (double)firstNumber + (double)secondNumber;
