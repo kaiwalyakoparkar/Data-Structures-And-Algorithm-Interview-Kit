@@ -1,10 +1,10 @@
-package Fibonacci_Series;
+package For_Loops;
 
 import java.util.Scanner;
 
 public class Fibonacci_Series {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -23,5 +23,4 @@ public class Fibonacci_Series {
 		}
 		
 	}
-
 }

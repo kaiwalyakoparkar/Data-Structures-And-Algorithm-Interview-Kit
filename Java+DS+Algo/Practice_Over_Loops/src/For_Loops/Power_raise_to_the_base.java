@@ -1,9 +1,10 @@
-package Raise_to_the_power_problem;
+package For_Loops;
+
 import java.util.Scanner;
 
-public class Raise_to_the_power_problem{
-	
-	public static void main(String[] args) {
+public class Power_raise_to_the_base {
+
+public static void main(String[] args) {
 		
 		//This programs intention is not to use he built in library pow()
 		//but to do it by loops
