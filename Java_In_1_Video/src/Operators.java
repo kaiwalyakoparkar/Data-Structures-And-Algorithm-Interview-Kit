@@ -1,5 +1,5 @@
 public class Operators{
-	public static class main(String[] args){
+	public static void main(String[] args){
 		int firstNumber = 13;
 		int secondNumber = 15;
 		int sum = (firstNumber + secondNumber);
