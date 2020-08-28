@@ -1,8 +1,2 @@
-INDEX VERSION 1.131+D:\GitHub Repo\Java-tutorial\.metadata\.plugins\org.eclipse.jdt.core
-2250016719.index
-483546182.index
-117477843.index
-4111637849.index
-2417418165.index
+INDEX VERSION 1.131+D:\GitHub Repo\Data-Structures-And-Algorithm-Interview-Kit\.metadata\.plugins\org.eclipse.jdt.core
 1067094681.index
-399131874.index
