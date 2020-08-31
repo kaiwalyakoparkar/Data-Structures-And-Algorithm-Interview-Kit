@@ -1,0 +1,469 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Bubble_Sort<Algorithms>",
+            "request": "launch",
+            "mainClass": "Sorting.Bubble_Sort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Inbuilt_Functions<Algorithms>",
+            "request": "launch",
+            "mainClass": "Sorting.Inbuilt_Functions",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Selection_Sort<Algorithms>",
+            "request": "launch",
+            "mainClass": "Sorting.Selection_Sort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Monk_and_Rotation<Competative_Programming>",
+            "request": "launch",
+            "mainClass": "Code_Monk.Monk_and_Rotation",
+            "projectName": "Competative_Programming"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Reverse_the_array<Competative_Programming>",
+            "request": "launch",
+            "mainClass": "Hacker_Rank.Reverse_the_array",
+            "projectName": "Competative_Programming"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Solution<Competative_Programming>",
+            "request": "launch",
+            "mainClass": "Hacker_Rank.Solution",
+            "projectName": "Competative_Programming"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Array<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "Array",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Do_while_loop<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "Do_while_loop",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Exception_handling<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "Exception_handling",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FirstJavaClass<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "FirstJavaClass",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-For_Loop<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "For_Loop",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HelloWorld<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Logical_Operators<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "Logical_Operators",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Matrix<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "Matrix",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Methods<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "Methods",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Operators<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "Operators",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Simple_if_else<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "Simple_if_else",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Switch_Case<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "Switch_Case",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Taking_user_input<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "Taking_user_input",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-While_loop<Compiling the projects>",
+            "request": "launch",
+            "mainClass": "While_loop",
+            "projectName": "Compiling the projects"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Adding_two_matrix<Data_Structures>",
+            "request": "launch",
+            "mainClass": "Array.Adding_two_matrix",
+            "projectName": "Data_Structures"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Multidimentional_Array<Data_Structures>",
+            "request": "launch",
+            "mainClass": "Array.Multidimentional_Array",
+            "projectName": "Data_Structures"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Single_Dimension_Average_Marks_of_students<Data_Structures>",
+            "request": "launch",
+            "mainClass": "Array.Single_Dimension_Average_Marks_of_students",
+            "projectName": "Data_Structures"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Single_Dimentional_Array<Data_Structures>",
+            "request": "launch",
+            "mainClass": "Array.Single_Dimentional_Array",
+            "projectName": "Data_Structures"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Anagrams_of_strings<Data_Structures>",
+            "request": "launch",
+            "mainClass": "Strings.Anagrams_of_strings",
+            "projectName": "Data_Structures"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Functions_by_Developers<Data_Structures>",
+            "request": "launch",
+            "mainClass": "Strings.Functions_by_Developers",
+            "projectName": "Data_Structures"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-String_Declaration<Data_Structures>",
+            "request": "launch",
+            "mainClass": "Strings.String_Declaration",
+            "projectName": "Data_Structures"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Reversing_the_words_in_the_string<Homework_Questions>",
+            "request": "launch",
+            "mainClass": "Practice_Strings.Reversing_the_words_in_the_string",
+            "projectName": "Homework_Questions"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConstructorOverloding<Object_Oriented_Programming_System>",
+            "request": "launch",
+            "mainClass": "Consructors.ConstructorOverloding",
+            "projectName": "Object_Oriented_Programming_System"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Constructors<Object_Oriented_Programming_System>",
+            "request": "launch",
+            "mainClass": "Consructors.Constructors",
+            "projectName": "Object_Oriented_Programming_System"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Encapsulation_Main<Object_Oriented_Programming_System>",
+            "request": "launch",
+            "mainClass": "Encapsulation.Encapsulation_Main",
+            "projectName": "Object_Oriented_Programming_System"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainClass<Object_Oriented_Programming_System>",
+            "request": "launch",
+            "mainClass": "Inheritance.MainClass",
+            "projectName": "Object_Oriented_Programming_System"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Methods<Object_Oriented_Programming_System>",
+            "request": "launch",
+            "mainClass": "Methods.Methods",
+            "projectName": "Object_Oriented_Programming_System"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Objects_And_Classes<Object_Oriented_Programming_System>",
+            "request": "launch",
+            "mainClass": "Objects_And_Classes.Objects_And_Classes",
+            "projectName": "Object_Oriented_Programming_System"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainClass<Object_Oriented_Programming_System>(1)",
+            "request": "launch",
+            "mainClass": "Singleton_Class.MainClass",
+            "projectName": "Object_Oriented_Programming_System"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Blocks<Object_Oriented_Programming_System>",
+            "request": "launch",
+            "mainClass": "Static_Keyword.Blocks",
+            "projectName": "Object_Oriented_Programming_System"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Math_Function<Object_Oriented_Programming_System>",
+            "request": "launch",
+            "mainClass": "Static_Keyword.Math_Function",
+            "projectName": "Object_Oriented_Programming_System"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Stactic_Keyword<Object_Oriented_Programming_System>",
+            "request": "launch",
+            "mainClass": "Static_Keyword.Stactic_Keyword",
+            "projectName": "Object_Oriented_Programming_System"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Fibonacci_Series<Practice_Over_Loops>",
+            "request": "launch",
+            "mainClass": "For_Loops.Fibonacci_Series",
+            "projectName": "Practice_Over_Loops"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Fraction_Addition<Practice_Over_Loops>",
+            "request": "launch",
+            "mainClass": "For_Loops.Fraction_Addition",
+            "projectName": "Practice_Over_Loops"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Power_raise_to_the_base<Practice_Over_Loops>",
+            "request": "launch",
+            "mainClass": "For_Loops.Power_raise_to_the_base",
+            "projectName": "Practice_Over_Loops"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Prime_Number<Practice_Over_Loops>",
+            "request": "launch",
+            "mainClass": "For_Loops.Prime_Number",
+            "projectName": "Practice_Over_Loops"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NxN_box_printing<Practice_Over_Loops>",
+            "request": "launch",
+            "mainClass": "Patterns_Printing.NxN_box_printing",
+            "projectName": "Practice_Over_Loops"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Triangle_printing<Practice_Over_Loops>",
+            "request": "launch",
+            "mainClass": "Patterns_Printing.Triangle_printing",
+            "projectName": "Practice_Over_Loops"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Triangle_printing_in_reverse<Practice_Over_Loops>",
+            "request": "launch",
+            "mainClass": "Patterns_Printing.Triangle_printing_in_reverse",
+            "projectName": "Practice_Over_Loops"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Addition_of_the_elements_in_number<Practice_Over_Loops>",
+            "request": "launch",
+            "mainClass": "While_and_do_while_loop.Addition_of_the_elements_in_number",
+            "projectName": "Practice_Over_Loops"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Creating_File<Programming_Knowledge>",
+            "request": "launch",
+            "mainClass": "File_Manipulaion.Creating_File",
+            "projectName": "Programming_Knowledge"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Reading_Created_file<Programming_Knowledge>",
+            "request": "launch",
+            "mainClass": "File_Manipulaion.Reading_Created_file",
+            "projectName": "Programming_Knowledge"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConstructorOverloding<src (2)>",
+            "request": "launch",
+            "mainClass": "Consructors.ConstructorOverloding",
+            "projectName": "src (2)"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Constructors<src (2)>",
+            "request": "launch",
+            "mainClass": "Consructors.Constructors",
+            "projectName": "src (2)"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Encapsulation_Main<src (2)>",
+            "request": "launch",
+            "mainClass": "Encapsulation.Encapsulation_Main",
+            "projectName": "src (2)"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainClass<src (2)>",
+            "request": "launch",
+            "mainClass": "Inheritance.MainClass",
+            "projectName": "src (2)"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Methods<src (2)>",
+            "request": "launch",
+            "mainClass": "Methods.Methods",
+            "projectName": "src (2)"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Objects_And_Classes<src (2)>",
+            "request": "launch",
+            "mainClass": "Objects_And_Classes.Objects_And_Classes",
+            "projectName": "src (2)"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainClass<src (2)>(1)",
+            "request": "launch",
+            "mainClass": "Singleton_Class.MainClass",
+            "projectName": "src (2)"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Blocks<src (2)>",
+            "request": "launch",
+            "mainClass": "Static_Keyword.Blocks",
+            "projectName": "src (2)"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Math_Function<src (2)>",
+            "request": "launch",
+            "mainClass": "Static_Keyword.Math_Function",
+            "projectName": "src (2)"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Stactic_Keyword<src (2)>",
+            "request": "launch",
+            "mainClass": "Static_Keyword.Stactic_Keyword",
+            "projectName": "src (2)"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Adding_two_matrix<src>",
+            "request": "launch",
+            "mainClass": "Array.Adding_two_matrix",
+            "projectName": "src"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Multidimentional_Array<src>",
+            "request": "launch",
+            "mainClass": "Array.Multidimentional_Array",
+            "projectName": "src"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Single_Dimension_Average_Marks_of_students<src>",
+            "request": "launch",
+            "mainClass": "Array.Single_Dimension_Average_Marks_of_students",
+            "projectName": "src"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Single_Dimentional_Array<src>",
+            "request": "launch",
+            "mainClass": "Array.Single_Dimentional_Array",
+            "projectName": "src"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Anagrams_of_strings<src>",
+            "request": "launch",
+            "mainClass": "Strings.Anagrams_of_strings",
+            "projectName": "src"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Functions_by_Developers<src>",
+            "request": "launch",
+            "mainClass": "Strings.Functions_by_Developers",
+            "projectName": "src"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-String_Declaration<src>",
+            "request": "launch",
+            "mainClass": "Strings.String_Declaration",
+            "projectName": "src"
+        }
+    ]
+}
