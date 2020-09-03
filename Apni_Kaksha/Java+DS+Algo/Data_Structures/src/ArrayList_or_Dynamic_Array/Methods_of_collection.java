@@ -44,5 +44,56 @@ public class Methods_of_collection {
 		vegetable.remove(0);//Removes the ladies finger from the 0th position and add potato on its index
 		
 		
+		/*removeAll() function: removes multiple function from the list.*/
+		/*Here I will be creating a different list, take its subset and remove the subset elements*/
+		List<String> name = new ArrayList();
+		name.add("Kaiwalya");
+		name.add("Ketan");
+		name.add("Vaibhavi");
+		List<String> subname = new ArrayList();
+		subname.add("Kaiwalya");
+		subname.add("Ketan");
+		name.removeAll(subname);
+		System.out.println(name);
+		
+		
+		/*clear() function: removes all the elements from the list*/
+		/*I will be again creating new list and will be operating on it */
+		List<String> brands = new ArrayList();
+		brands.add("Puma");
+		brands.add("Adidas");
+		brands.add("Nike");
+		System.out.println("Before clearing: "+brands);
+		brands.clear();
+		System.out.println("After clearing: "+brands);
+		
+		
+		/*size() function: Tells the length/size of the list*/
+		List<String> softwares = new ArrayList();
+		softwares.add("Vs code");
+		softwares.add("Sublime Text");
+		softwares.add("Eclipse");
+		softwares.add("Android studio");
+		softwares.add("Dev C++");
+		System.out.println("The number of softwares are :"+softwares.size());
+		
+		
+		/*contains() function: checks if the element is present in the list or not*/
+		System.out.println(softwares.contains("Vs code"));
+		
+		
+		/*isEmpty() function: checks if the list is empty*/
+		List<String> EmptyList = new ArrayList();
+		System.out.println(softwares.isEmpty());
+		System.out.println(EmptyList.isEmpty());
+		
+		/*toArray() function: Converts the string into array*/
+		String temp[] = new String[softwares.size()];
+		
+		softwares.toArray(temp);
+		for(String e: temp){
+			//means for each e element in temp
+			System.out.println(e);
+		}
 	}
 }

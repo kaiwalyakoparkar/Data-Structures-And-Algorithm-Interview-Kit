@@ -3,6 +3,7 @@ content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="n
 content_assist_number_of_computers=13
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
+do_not_ask_to_install_user_dictionary=true
 eclipse.preferences.version=1
 org.eclipse.jdt.ui.formatterprofiles.version=19
 spelling_locale_initialized=true
