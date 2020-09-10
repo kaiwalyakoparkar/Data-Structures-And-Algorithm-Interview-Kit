@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Class" type="Java Scratch">
+    <option name="MAIN_CLASS_NAME" value="For_Loops" />
+    <module name="Apni_Kaksha" />
+    <option name="SCRATCH_FILE_URL" value="file://$PROJECT_DIR$/Java_In_1_Video/bin/HelloWorld.class" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
