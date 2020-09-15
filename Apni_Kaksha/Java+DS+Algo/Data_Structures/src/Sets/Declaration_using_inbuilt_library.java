@@ -26,7 +26,10 @@ public class Declaration_using_inbuilt_library {
 		System.out.println("The size of set is: "+fruits.size());
 		
 		
-		seasonalFruits.addAll("Grapes","Mango","Oranges");
+		seasonalFruits.add("Mango");
+		seasonalFruits.add("Grapes");
+		seasonalFruits.add("Oranges");
+		seasonalFruits.add("Papaya");
 		System.out.println(seasonalFruits);
 		System.out.println("The size of set is: "+seasonalFruits.size());
 		
