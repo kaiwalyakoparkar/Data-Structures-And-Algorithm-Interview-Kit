@@ -20,6 +20,8 @@ public class Declaration_using_inbuilt_library {
 		
 		//Declaration of the sets using Hash set
 		Set<String> fruits = new HashSet<>();
+		Set<Integer> x = new HashSet<>();
+		Set<Integer> y = new HashSet<>();
 		//Declaration of the sets using Linked Hash Set
 		Set<String> seasonalFruits = new LinkedHashSet<>();
 		//Declaration of the sets using tree set
@@ -33,7 +35,6 @@ public class Declaration_using_inbuilt_library {
 		System.out.println(fruits);
 		System.out.println("The size of set is: "+fruits.size());
 		
-		
 		seasonalFruits.add("Mango");
 		seasonalFruits.add("Grapes");
 		seasonalFruits.add("Oranges");
@@ -41,14 +42,27 @@ public class Declaration_using_inbuilt_library {
 		seasonalFruits.add("Chikku");
 		System.out.println(seasonalFruits);
 		
-		
 		stocks.add(10);
 		stocks.add(6);
 		stocks.add(4);
 		stocks.add(13);
 		stocks.add(11);
-		
 		System.out.println(stocks);
+		
+		//addAll() method - it is used for the union of two sets
+		x.add(5);
+		x.add(65);
+		x.add(54);
+		x.add(1);
+		System.out.println(x);
+		y.add(6);
+		y.add(45);
+		y.add(59);
+		y.add(1);
+		System.out.println(y);
+		x.addAll(y);
+		System.out.println(x);
+		
 		//size() method - gives the size of the collection
 		System.out.println("The size of set is: "+seasonalFruits.size());
 		
