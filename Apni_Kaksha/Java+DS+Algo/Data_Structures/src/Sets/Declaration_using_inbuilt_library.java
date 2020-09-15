@@ -22,6 +22,8 @@ public class Declaration_using_inbuilt_library {
 		Set<String> fruits = new HashSet<>();
 		//Declaration of the sets using Linked Hash Set
 		Set<String> seasonalFruits = new LinkedHashSet<>();
+		//Declaration of the sets using tree set
+		Set<Integer> stocks = new TreeSet<>();
 		
 		//add() - Adds a single element to the collection
 		fruits.add("Mango");
@@ -39,6 +41,14 @@ public class Declaration_using_inbuilt_library {
 		seasonalFruits.add("Chikku");
 		System.out.println(seasonalFruits);
 		
+		
+		stocks.add(10);
+		stocks.add(6);
+		stocks.add(4);
+		stocks.add(13);
+		stocks.add(11);
+		
+		System.out.println(stocks);
 		//size() method - gives the size of the collection
 		System.out.println("The size of set is: "+seasonalFruits.size());
 		
