@@ -31,19 +31,26 @@ public class Declaration_using_inbuilt_library {
 		seasonalFruits.add("Oranges");
 		seasonalFruits.add("Papaya");
 		System.out.println(seasonalFruits);
+		
+		//size() method - gives the size of the collection
 		System.out.println("The size of set is: "+seasonalFruits.size());
 		
+		//retainsAll() method - checks if there are any intersecting elements
 		System.out.println("Is there any intersecting element? -"+seasonalFruits.retainAll(fruits));
 		
+		//remove() method - removes the element from the collection
 		fruits.remove("Guava");
 		System.out.println(fruits);
 		
-		
+		//containsAll() method - checks if 2nd collection contains elements from the 1st collection
 		System.out.println("Does it contains passed fruit: "+fruits.contains("Mango"));
 		System.out.println(seasonalFruits.containsAll(seasonalFruits));
 		
+		//removeAll() method - removes all the elements from the collection
 		seasonalFruits.removeAll(seasonalFruits);
 		System.out.println(seasonalFruits);
+		
+		//isEmpty() method - checks if the collection is empty
 		System.out.println(fruits.isEmpty());
 		System.out.println(seasonalFruits.isEmpty());
 	}
