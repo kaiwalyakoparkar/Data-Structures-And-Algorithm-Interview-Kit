@@ -66,8 +66,9 @@ public class Declaration_using_inbuilt_library {
 		//size() method - gives the size of the collection
 		System.out.println("The size of set is: "+seasonalFruits.size());
 		
-		//retainsAll() method - checks if there are any intersecting elements
-		System.out.println("Is there any intersecting element? -"+seasonalFruits.retainAll(fruits));
+		//retainsAll() method - displays the intersecting elements
+		seasonalFruits.retainAll(fruits);
+		System.out.println(seasonalFruits);
 		
 		//remove() method - removes the element from the collection
 		fruits.remove("Guava");
