@@ -13,9 +13,15 @@ public class Declaration_using_inbuilt_library {
 
 	public static void main(String[] args) {
 		
+		/*HashSet : Although we arrange all the elements
+		 *sequentially they do not get stored sequentially
+		 *we have to use other type of set to store and 
+		 *print them in order given by us*/
+		
 		//Declaration of the sets using Hash set
 		Set<String> fruits = new HashSet<>();
-		Set<String> seasonalFruits = new HashSet<>();
+		//Declaration of the sets using Linked Hash Set
+		Set<String> seasonalFruits = new LinkedHashSet<>();
 		
 		//add() - Adds a single element to the collection
 		fruits.add("Mango");
