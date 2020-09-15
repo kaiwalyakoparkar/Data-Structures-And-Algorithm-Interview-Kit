@@ -36,6 +36,7 @@ public class Declaration_using_inbuilt_library {
 		seasonalFruits.add("Grapes");
 		seasonalFruits.add("Oranges");
 		seasonalFruits.add("Papaya");
+		seasonalFruits.add("Chikku");
 		System.out.println(seasonalFruits);
 		
 		//size() method - gives the size of the collection
