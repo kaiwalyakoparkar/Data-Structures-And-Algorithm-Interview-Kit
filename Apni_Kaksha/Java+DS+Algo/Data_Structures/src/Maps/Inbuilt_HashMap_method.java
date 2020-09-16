@@ -51,6 +51,32 @@ public class Inbuilt_HashMap_method {
 		number.replace("Five",500);
 		System.out.println("After replacing: "+number);
 		
+		//replace (K, V old, V new) Method - Replaces the value of key K with the new alue only if the key k is associated with the value oldvalue
+		System.out.println(number);
+		number.replace("One", 10, 1);
+		System.out.println(number);
+		number.replace("Five",6,600);
+		System.out.println(number);
 		
+		//remove(K) - Removes the entry from the map presented by k
+		System.out.println(number);
+		number.remove("Eight");
+		System.out.println(number);
+		
+		//remove(K, V) - Removes the entry if K is associated with v
+		System.out.println(number);
+		System.out.println(number.remove("Seven",3));
+		
+		//keySet() - Displays all the keys present
+		System.out.println(number);
+		System.out.println(number.keySet());
+		
+		//values() - Displays all the values present
+		System.out.println(number);
+		System.out.println(number.values());
+		
+		//entrySet() - Displays all the entry sets
+		System.out.println(number);
+		System.out.println(number.entrySet());
 	}
 }
