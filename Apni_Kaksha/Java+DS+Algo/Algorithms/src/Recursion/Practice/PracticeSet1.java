@@ -18,8 +18,12 @@ public class PracticeSet1 {
 		pract1(n);
 	}
 	public static void pract1(int n){
-		if(n==1) {
-			return 1;
+		if(n==0) {
+			return;
 		}
+		
+		System.out.println(n);//when added up prints reverse
+		pract1(n-1);
+		System.out.println(n);//when added down prints ascending
 	}
 }
