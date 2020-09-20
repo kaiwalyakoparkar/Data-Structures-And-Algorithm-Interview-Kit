@@ -38,6 +38,7 @@ class Graph{
 			result+=i+"=>"+G[i]+"\n";
 		return result;
 	}
+	
 }
 public class AdjacencyList {
 	public static void main(String[] args) {
