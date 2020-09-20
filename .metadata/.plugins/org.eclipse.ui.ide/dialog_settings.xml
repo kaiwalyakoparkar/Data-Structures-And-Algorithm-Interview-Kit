@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\GitHub Repo\Competative-Programming-Challenge"/>
 			<item value="D:\GitHub Repo\Data-Structures-And-Algorithm-Interview-Kit"/>
 			<item value="D:\GitHub Repo\Java-fx-Tutorial"/>
 			<item value="D:\GitHub Repo\Data-Structures-And-Algorithm-Interview-Kit\Apni_Kaksha\Java+DS+Algo\Algorithms\src\Sorting"/>
