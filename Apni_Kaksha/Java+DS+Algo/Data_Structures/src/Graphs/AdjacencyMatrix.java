@@ -1,10 +1,10 @@
 package Graphs;
 
-public class AjdacencyMatrix {
+public class AdjacencyMatrix {
     int vertex;
     int matrix[][];
 
-    public AjdacencyMatrix(int vertex) {
+    public AdjacencyMatrix(int vertex) {
         this.vertex = vertex;
         matrix = new int[vertex][vertex];
     }
@@ -37,7 +37,7 @@ public class AjdacencyMatrix {
     }
 
     public static void main(String[] args) {
-        AjdacencyMatrix graph = new AjdacencyMatrix(5);
+        AdjacencyMatrix graph = new AdjacencyMatrix(5);
         graph.addEdge(0, 1);
         graph.addEdge(0, 4);
         graph.addEdge(1, 2);
