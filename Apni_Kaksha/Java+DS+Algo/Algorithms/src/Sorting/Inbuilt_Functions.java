@@ -16,7 +16,7 @@ public class Inbuilt_Functions {
 				// Our arr contains 8 elements 
 				int[] arr = {13, 7, 6, 45, 21, 9, 101, 102}; 
 
-				Arrays.sort(arr); 
+				Arrays.sort(arr); //This uses the Randomized Quick sort
 
 				for(int i=0; i<arr.length-1; i++) {
 					System.out.print(" "+arr[i]);
