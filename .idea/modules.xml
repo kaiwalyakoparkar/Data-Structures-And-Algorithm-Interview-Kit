@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Apni_Kaksha/Java+DS+Algo/Algorithms/Algorithms.iml" filepath="$PROJECT_DIR$/Apni_Kaksha/Java+DS+Algo/Algorithms/Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Competative_Programming/Competative_Programming.iml" filepath="$PROJECT_DIR$/Competative_Programming/Competative_Programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Competative_Programming/src/Competative_Programming1.iml" filepath="$PROJECT_DIR$/Competative_Programming/src/Competative_Programming1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Apni_Kaksha/Java+DS+Algo/Data_Structures/Data_Structures.iml" filepath="$PROJECT_DIR$/Apni_Kaksha/Java+DS+Algo/Data_Structures/Data_Structures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Apni_Kaksha/Homework_Questions/Homework_Questions.iml" filepath="$PROJECT_DIR$/Apni_Kaksha/Homework_Questions/Homework_Questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Apni_Kaksha/Java_In_1_Video/Java_In_1_Video.iml" filepath="$PROJECT_DIR$/Apni_Kaksha/Java_In_1_Video/Java_In_1_Video.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Apni_Kaksha/Java+DS+Algo/Object_Oriented_Programming_System/Object_Oriented_Programming_System.iml" filepath="$PROJECT_DIR$/Apni_Kaksha/Java+DS+Algo/Object_Oriented_Programming_System/Object_Oriented_Programming_System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pep_Coding/Pep_Coding.iml" filepath="$PROJECT_DIR$/Pep_Coding/Pep_Coding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Apni_Kaksha/Java+DS+Algo/Practice_Over_Loops/Practice_Over_Loops.iml" filepath="$PROJECT_DIR$/Apni_Kaksha/Java+DS+Algo/Practice_Over_Loops/Practice_Over_Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programming_Knowledge/Programming_Knowledge.iml" filepath="$PROJECT_DIR$/Programming_Knowledge/Programming_Knowledge.iml" />
+    </modules>
+  </component>
+</project>
