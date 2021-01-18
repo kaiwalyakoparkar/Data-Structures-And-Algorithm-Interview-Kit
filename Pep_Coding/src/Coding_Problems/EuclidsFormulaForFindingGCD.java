@@ -7,12 +7,13 @@ public class EuclidsFormulaForFindingGCD {
         int n2 = sc.nextInt();
         euclidAnswer(n1,n2);
 
+
     }
     public static void euclidAnswer(int n1,int n2){
 
         if(n2==0){
             System.out.print(n1);
-            return ;
+            return;
         }
         if(n1<n2){
             euclidAnswer(n1, n2%n1);
