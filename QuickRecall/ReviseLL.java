@@ -6,7 +6,7 @@ public class ReviseLL{
         int data;
         Node next;
     }
-    public static class Linkedlist{
+    public static class LinkedList{
         Node head;
         Node tail;
         int size = 0;
@@ -15,7 +15,6 @@ public class ReviseLL{
             Node n = new Node();
             n.data = val;
             n.next = null;
-
             if(size==0){
                 head = tail = n;
             }else{
@@ -32,18 +31,19 @@ public class ReviseLL{
         }
     }
     public static void main(String args[]){
-        Linkedlist li =  new Linkedlist();
         Scanner sc = new Scanner(System.in);
+        LinkedList li = new LinkedList();
+
         System.out.println("Enter the number of elements in the linked list: ");
         int n = sc.nextInt();
 
-        System.out.println("Enter the linked list: ");
+        System.out.println("Enter the elements in the linked list: ");
         for(int i=0; i<n; i++){
-            int val = sc.nextInt();
-            li.add(val);
+            int data = sc.nextInt();
+            li.add(data);
         }
 
-        System.out.println("Linked list you enter was: ");
+        System.out.println("The linked list you entered was: ");
         li.display();
     }
 }
