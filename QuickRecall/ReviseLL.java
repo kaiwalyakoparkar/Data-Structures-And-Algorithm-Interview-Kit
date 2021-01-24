@@ -11,11 +11,12 @@ public class ReviseLL{
         Node tail;
         int size = 0;
 
-        void add(int val){
+        void add(int data){
             Node n = new Node();
-            n.data = val;
+            n.data = data;
             n.next = null;
-            if(size==0){
+
+            if(size == 0){
                 head = tail = n;
             }else{
                 tail.next = n;
@@ -37,13 +38,12 @@ public class ReviseLL{
         System.out.println("Enter the number of elements in the linked list: ");
         int n = sc.nextInt();
 
-        System.out.println("Enter the elements in the linked list: ");
-        for(int i=0; i<n; i++){
+        for(int i = 0; i < n ; i++){
             int data = sc.nextInt();
             li.add(data);
         }
 
-        System.out.println("The linked list you entered was: ");
+        System.out.println("The linked list you enter is: ");
         li.display();
     }
 }
