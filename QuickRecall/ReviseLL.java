@@ -24,6 +24,7 @@ public class ReviseLL{
             }
             size++;
         }
+
         void display(){
             for(Node temp = head; temp != null; temp = temp.next){
                 System.out.print(temp.data+" ");
@@ -33,17 +34,18 @@ public class ReviseLL{
     }
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        LinkedList li = new LinkedList();
+        LinkedList li =  new LinkedList();
 
         System.out.println("Enter the number of elements in the linked list: ");
         int n = sc.nextInt();
 
-        for(int i = 0; i < n ; i++){
+        System.out.println("Enter the data: ");
+        for(int i=0 ;i<n; i++){
             int data = sc.nextInt();
             li.add(data);
         }
 
-        System.out.println("The linked list you enter is: ");
+        System.out.println("Linked List you entered was: ");
         li.display();
     }
 }
