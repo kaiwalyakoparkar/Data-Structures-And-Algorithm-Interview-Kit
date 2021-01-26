@@ -24,28 +24,24 @@ public class ReviseLL{
             }
             size++;
         }
-
         void display(){
             for(Node temp = head; temp != null; temp = temp.next){
                 System.out.print(temp.data+" ");
             }
-            System.out.println();
         }
     }
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        LinkedList li =  new LinkedList();
-
-        System.out.println("Enter the number of elements in the linked list: ");
+        LinkedList li = new LinkedList();
+        System.out.println("Enter the no of elements in the LinkedList: ");
         int n = sc.nextInt();
 
-        System.out.println("Enter the data: ");
-        for(int i=0 ;i<n; i++){
+        for(int i=0; i<n; i++){
             int data = sc.nextInt();
             li.add(data);
         }
 
-        System.out.println("Linked List you entered was: ");
+        System.out.println("LinkedList you entered was: ");
         li.display();
     }
 }

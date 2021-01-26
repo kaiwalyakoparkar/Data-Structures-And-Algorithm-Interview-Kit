@@ -10,7 +10,6 @@ public class ReviseTree{
             this.data = data;
         }
     }
-
     public static Node createTree(Scanner sc){
         Node root = null;
         System.out.println("Enter the data: ");
@@ -20,15 +19,15 @@ public class ReviseTree{
         }
         root = new Node(data);
 
-        System.out.println("Enter the left for "+data);
+        System.out.println("Enter left for: "+data);
         root.left = createTree(sc);
-        System.out.println("Enter the right for "+data);
+        System.out.println("Enter right for: "+data);
         root.right = createTree(sc);
 
         return root;
     }
     public static void inOrder(Node root){
-        if(root == null){
+        if(root==null){
             return;
         }
 
@@ -37,7 +36,7 @@ public class ReviseTree{
         inOrder(root.right);
     }
     public static void preOrder(Node root){
-        if(root == null){
+        if(root==null){
             return;
         }
 
@@ -46,7 +45,7 @@ public class ReviseTree{
         preOrder(root.right);
     }
     public static void postOrder(Node root){
-        if(root == null){
+        if(root==null){
             return;
         }
 
@@ -58,14 +57,12 @@ public class ReviseTree{
         Scanner sc = new Scanner(System.in);
         Node root = createTree(sc);
 
-        System.out.println();
         System.out.println("Inorder traversal is: ");
         inOrder(root);
-        System.out.println();
         System.out.println("Preorder traversal is: ");
         preOrder(root);
-        System.out.println();
         System.out.println("Postorder traversal is: ");
         postOrder(root);
+
     }
 }
