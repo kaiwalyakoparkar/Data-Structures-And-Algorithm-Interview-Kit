@@ -1,7 +1,7 @@
 package Graphs;
 
-//Java code to demonstrate Graph representation 
-//using Linked List in Java 
+//Java code to demonstrate Graph representation
+//using Linked List in Java
 //Following is the Adjacency list
 
 
@@ -29,7 +29,7 @@ class Graph{
 		return false;
 	}
 	void addEdge(int u,int v,int w){
-		G[u].add(0,new Edge(v,w)); 
+		G[u].add(0,new Edge(v,w));
 	}
 	@Override
 	public String toString(){
@@ -38,7 +38,7 @@ class Graph{
 			result+=i+"=>"+G[i]+"\n";
 		return result;
 	}
-	
+
 }
 public class AdjacencyList {
 	public static void main(String[] args) {
@@ -47,7 +47,7 @@ public class AdjacencyList {
 		g.addEdge(0, 5, 15);
 		g.addEdge(2, 5, 10);
 		g.addEdge(9, 3, 16);
-		
+
 		System.out.println(g);
 		System.out.println(g.isConnected(9,3));
 	}
