@@ -1,71 +1,61 @@
-//Find Max and Min
-
-package FindMaxMin;
+package MinimiseTheMaiximumDifferenceBtwHeights;
 import java.util.*;
 
 public class Solution{
     public static void main(String args[]){
-
         Scanner sc = new Scanner(System.in);
+        int k = sc.nextInt();
         int n = sc.nextInt();
         int arr[] = new int[n];
-        for(int i=0; i<arr.length; i++){
+
+        for(int i = 0; i < arr.length; i++){
             arr[i] = sc.nextInt();
         }
 
-        int maxIterative = 0;
-        int minIterative = 100000000;
+       if (n == 1)
+        return;
 
-        //This is Iterative method
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]>maxIterative){
-                maxIterative = arr[i];
-            }
-            if(arr[i]<minIterative){
-                minIterative = arr[i];
-            }
-        }
-
-        System.out.println("Max by iterative is: "+maxIterative);
-        System.out.println("Min by iterative is: "+minIterative);
-
-        //This is Tournament method
-        int maxTour1 = 0;
-        int maxTour2 = 0;
-        int minTour1 = 100000000;
-        int minTour2 = 100000000;
-
-        for(int i=0; i<arr.length/2; i++){
-            if(arr[i]>maxTour1){
-                maxTour1 = arr[i];
-            }
-            if(arr[i]<minTour1){
-                minTour1 = arr[i];
-            }
-        }
-        for(int i=arr.length/2; i<arr.length; i++){
-            if(arr[i]>maxTour2){
-                maxTour2 = arr[i];
-            }
-            if(arr[i]<minTour2){
-                minTour2 = arr[i];
-            }
-        }
-        if(maxTour1<maxTour2){
-            System.out.println("Max by Tournament method is: "+maxTour2);
-        }else{
-            System.out.println("Max by Tournament method is: "+maxTour1);
-        }
-        if(minTour1<minTour2){
-            System.out.println("Min by Tournament method is: "+minTour1);
-        }else{
-            System.out.println("Min by Tournament method is: "+minTour2);
-        }
-
-        //This is Sorting method
+        // Sort all elements
         Arrays.sort(arr);
-        System.out.println("Max by sorting method is: "+arr[arr.length-1]);
-        System.out.println("Min by sorting method is: "+arr[0]);
 
+        // Initialize result
+        int ans = arr[n-1] - arr[0];
+
+        // Handle corner elements
+        int small = arr[0] + k;
+        int big = arr[n-1] - k;
+        int temp = 0;
+
+        if (small > big)
+        {
+            temp = small;
+            small = big;
+            big = temp;
+        }
+
+        // Traverse middle elements
+        for (int i = 1; i < n-1; i ++)
+        {
+            int subtract = arr[i] - k;
+            int add = arr[i] + k;
+
+            // If both subtraction and addition
+            // do not change diff
+            if (subtract >= small || add <= big)
+                continue;
+
+            // Either subtraction causes a smaller
+            // number or addition causes a greater
+            // number. Update small or big using
+            // greedy approach (If big - subtract
+            // causes smaller diff, update small
+            // Else update big)
+            if (big - subtract <= add - small)
+                small = subtract;
+            else
+                big = add;
+        }
+
+        System.out.println("Answer is: " + Math.min(ans, big - small));
     }
 }
