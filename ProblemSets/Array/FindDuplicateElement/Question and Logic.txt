@@ -13,3 +13,32 @@ Output: 2
 
 Answer :
 
+Logic:
+
+1. Naive Approach :
+    - Take input as array
+    - run 1 loop from i to arr . length - 2 location
+    - run 2nd loop from i to arr . length - 1 location
+    - if arr[ i ] = arr[ j ] then break out of the loop and return the arr [ i ] or arr[ j ]
+
+2. Sorting : 
+    - Take input as array
+    - sort the array using library function
+    - run a loop from i to arr . length - 2.
+    - and check if  arr[ i ] = arr[ i+1 ]. If yes then return arr [ i ]
+
+3. Extraspace : 
+    - Take the input as array
+    - sort the array using library function
+    - create an extra[ ] array of arr.length size
+    - run the loop from i to arr.length -1
+    - check if extra [ arr [ i ] ] = 0. if yes then make extra [ arr [ i ] ] = 1 and if no then return arr [ i ]
+
+4. Linked List / Rabbit and Tortoise method:
+    - Take input as array
+    - create a linked list and run a loop from i = 0 to i = arr . length
+    - make i = arr [ i ] and add arr [ i ] to linked list ( as shown in the code )
+    - take two pointers slow and fast. move slow by one step and fast by two steps
+    - whenever they will meet put fast on the first element
+    - and now move fast by one and slow by one until they both meet at a point
+    - return slow.
