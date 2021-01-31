@@ -15,3 +15,14 @@ Output: [1,3,2]
 
 Answer : 
 
+Logic: 
+
+1. Optimal Approach : 
+    - Take the input as the array
+    - make a varible " int mark = -1 "
+    - Traverse the array in reverse order and find if arr [ i ] > arr [ i - 1 ] make mark = i - 1 and break the loop
+    - if mark is -1 then reverse ( arr , 0) // reverse entire array
+    - else Traverse the array in the reverse order till mark + 1 and check if any element is greater than mark
+    - when found make the idx = i
+    - swap the arr [ mark ] and arr [ idx ]
+    - then reverse the array from arr [ mark+1 ] to arr [ arr.length ]
