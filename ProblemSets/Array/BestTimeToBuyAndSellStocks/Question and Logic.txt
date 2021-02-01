@@ -1,0 +1,37 @@
+Question : 
+
+You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day.
+
+You want to maximize your profit by choosing a **single day** to buy one stock and choosing a **different day in the future** to sell that stock.
+
+Return *the maximum profit you can achieve from this transaction*. If you cannot achieve any profit, return `0`.
+
+**Example 1:**
+
+```
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+```
+
+Answer : 
+
+Logic : 
+
+1. Brute Force approach : 
+    - Take input as an array
+    - declare integer profit and make it zero
+    - run 2 nested for loops i = 0 to i < arr.length -1 and j = i+1 to j < arr.length
+    - everytime do sum = arr [ j ] - arr [ i ] and check if sum > profit then update profit with sum
+    - At end print the sum
+
+
+2. Optimal Approach :
+    - Take input as an array
+    - declare 2 variables  profit  = 0 and minimal = 10e^9 ( 1000000000 )
+    - run a for loops i = 0 to i < arr.length
+    - for the first time when i = 0 just compare arr [ i ] < minimal and if yes update the minimal with arr [ i ]
+    - from the second time i = 1 and onwards compare if arr [ i ] - minimal > 0 if yes then if arr[ i ] - minimal > profit then update profit with arr [ i ] - minimal
+    - after the above nested if , implement one more if and check if arr[ i ] < minimal if yes then update the minimal with arr [ i ]
+
