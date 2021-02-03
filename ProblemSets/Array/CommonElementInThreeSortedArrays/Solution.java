@@ -39,35 +39,47 @@ public class Solution{
         //This is better approach
         List<Integer> li2 = new ArrayList<>();
         HashMap<Integer,Integer> hm = new HashMap<>();
+        int j = 0, k = 0;
+        if(n1==n2 && n2==n3){
+            for(int i=0; i < n1; i++){
+                if(arr1[i] == arr2[j] && arr2[j] == arr3[k] && li2.contains(arr1[i])==false){
+                    li2.add(arr1[i]);
+                }
+                j++;
+                k++;
+            }
+        }else {
+            for(int i = 0; i < arr1.length; i++){
+                if(hm.containsKey(arr1[i]) == false){
+                    hm.put(arr1[i], 0);
+                }
+            }
+            for(int i = 0; i < arr2.length; i++){
+                if(hm.containsKey(arr2[i]) == false){
+                    hm.put(arr2[i], 0);
+                }else if(hm.containsKey(arr2[i]) == true){
+                    hm.replace(arr2[i], 2);
+                }
+            }
+            for(int i = 0; i < arr3.length; i++){
+                if(hm.containsKey(arr3[i]) == false){
+                    hm.put(arr3[i], 0);
+                }else if(hm.containsKey(arr3[i]) == true){
+                    hm.replace(arr3[i], 3);
+                }
+            }
+            for(int i = 0; i < arr1.length; i++){
+                int x = hm.get(arr1[i]);
+                if(x == 3){
+                    li2.add(arr1[i]);
+                }
+            }
+            System.out.println("The repeating numbers are: ");
+            for(int i = 0; i < li2.size(); i++){
+                System.out.print(li2.get(i)+" ");
+            }
 
-        for(int i = 0; i < arr1.length; i++){
-            if(hm.containsKey(arr1[i]) == false){
-                hm.put(arr1[i], 0);
-            }
-        }
-        for(int i = 0; i < arr2.length; i++){
-            if(hm.containsKey(arr2[i]) == false){
-                hm.put(arr2[i], 0);
-            }else if(hm.containsKey(arr2[i]) == true){
-                hm.replace(arr2[i], 2);
-            }
-        }
-        for(int i = 0; i < arr3.length; i++){
-            if(hm.containsKey(arr3[i]) == false){
-                hm.put(arr3[i], 0);
-            }else if(hm.containsKey(arr3[i]) == true){
-                hm.replace(arr3[i], 3);
-            }
-        }
-        for(int i = 0; i < arr1.length; i++){
-            int x = hm.get(arr1[i]);
-            if(x == 3){
-                li2.add(arr1[i]);
-            }
-        }
-        System.out.println("The repeating numbers are: ");
-        for(int i = 0; i < li2.size(); i++){
-            System.out.print(li2.get(i)+" ");
+
         }
     }
 }
