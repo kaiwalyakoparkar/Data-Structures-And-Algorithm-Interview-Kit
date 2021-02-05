@@ -37,49 +37,74 @@ public class Solution{
         }
 
         //This is better approach
-        List<Integer> li2 = new ArrayList<>();
-        HashMap<Integer,Integer> hm = new HashMap<>();
-        int j = 0, k = 0;
-        if(n1==n2 && n2==n3){
-            for(int i=0; i < n1; i++){
-                if(arr1[i] == arr2[j] && arr2[j] == arr3[k] && li2.contains(arr1[i])==false){
-                    li2.add(arr1[i]);
-                }
-                j++;
-                k++;
-            }
-        }else {
-            for(int i = 0; i < arr1.length; i++){
-                if(hm.containsKey(arr1[i]) == false){
-                    hm.put(arr1[i], 0);
-                }
-            }
-            for(int i = 0; i < arr2.length; i++){
-                if(hm.containsKey(arr2[i]) == false){
-                    hm.put(arr2[i], 0);
-                }else if(hm.containsKey(arr2[i]) == true){
-                    hm.replace(arr2[i], 2);
-                }
-            }
-            for(int i = 0; i < arr3.length; i++){
-                if(hm.containsKey(arr3[i]) == false){
-                    hm.put(arr3[i], 0);
-                }else if(hm.containsKey(arr3[i]) == true){
-                    hm.replace(arr3[i], 3);
-                }
-            }
-            for(int i = 0; i < arr1.length; i++){
-                int x = hm.get(arr1[i]);
-                if(x == 3){
-                    li2.add(arr1[i]);
-                }
-            }
-            System.out.println("The repeating numbers are: ");
-            for(int i = 0; i < li2.size(); i++){
-                System.out.print(li2.get(i)+" ");
-            }
+        // creating a max variable
+        // for storing the maximum
+        // value present in the all
+        // the three array
+        // this will be the size of
+        // array for calculating the
+        // frequency of each element
+        // present in all the array
+        int max = Integer.MIN_VALUE;
 
+        // deleting duplicates in linear time
+        // for arr1
+        int res1 = 1;
+        for (int i = 1; i < n1; i++)
+        {
+            max = Math.max(arr1[i], max);
+            if (arr1[i] != arr1[res1 - 1])
+            {
+                arr1[res1] = arr1[i];
+                res1++;
+            }
+        }
 
+        // deleting duplicates in linear time
+        // for arr2
+        int res2 = 1;
+        for (int i = 1; i < n2; i++)
+        {
+            max = Math.max(arr2[i], max);
+            if (arr2[i] != arr2[res2 - 1])
+            {
+                arr2[res2] = arr2[i];
+                res2++;
+            }
+        }
+
+        // deleting duplicates in linear time
+        // for arr3
+        int res3 = 1;
+        for (int i = 1; i < n3; i++)
+        {
+            max = Math.max(arr3[i], max);
+            if (arr3[i] != arr3[res3 - 1])
+            {
+                arr3[res3] = arr3[i];
+                res3++;
+            }
+        }
+
+        // creating an array for finding frequency
+        int[] freq = new int[max + 1];
+
+        // calculating the frequency of
+        // all the elements present in
+        // all the array
+        for (int i = 0; i < res1; i++)
+            freq[arr1[i]]++;
+        for (int i = 0; i < res2; i++)
+            freq[arr2[i]]++;
+        for (int i = 0; i < res3; i++)
+            freq[arr3[i]]++;
+
+        // iterating till max and
+        // whenever the frequency of element
+        // will be three we print that element
+        for (int i = 0; i <= max; i++)
+            if (freq[i] == 3)
+                System.out.print(i + " ");
         }
     }
-}
+
