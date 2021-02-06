@@ -21,3 +21,7 @@ Given an integer, the task is to find factorial of the number.
 3628800
 
 2
+
+Answer : 
+
+Recurrsion is used
