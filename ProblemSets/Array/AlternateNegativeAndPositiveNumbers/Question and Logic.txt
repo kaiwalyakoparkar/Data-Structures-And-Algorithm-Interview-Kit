@@ -1,0 +1,23 @@
+Question : 
+
+Given an array of positive and negative numbers, arrange them in an alternate fashion such that every positive number is followed by negative and vice-versa maintaining the order of appearance. Number of positive and negative numbers need not be equal. If there are more positive numbers they appear at the end of the array. If there are more negative numbers, they too appear in the end of the array.
+
+**Examples :**
+
+```
+Input:  arr[] = {1, 2, 3, -4, -1, 4}
+Output: arr[] = {-4, 1, -1, 2, 3, 4}
+```
+
+Answer : 
+
+Logic :
+
+1. Optimal Solution : 
+- Take input as array
+- run a loop through the array
+- if index ( i )is even but the element at the index is positive then run a loop from that index ( i ) till we find a negative element
+- after finding the index  ( j )at which there is negative element
+- shift the array from index ( i ) to ( j ) once
+- At the end print the array
+
