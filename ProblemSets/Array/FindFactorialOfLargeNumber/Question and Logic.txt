@@ -1,0 +1,23 @@
+Question : 
+
+Given an integer, the task is to find factorial of the number.
+
+**Example** 
+
+**Input**
+
+3
+
+5
+
+10
+
+2
+
+**Output**
+
+120
+
+3628800
+
+2
