@@ -1,6 +1,7 @@
 # Data-Structures-And-Algorithm-Interview-Kit
 
-## Hello this is my progress repo...
+## Hello this is my progress repo on ds and algo...
+
 - I am consistently working on my problem solving and cp skills
 - All the programs are written in java
 - Current Ongoing topic "Array"
