@@ -21,3 +21,4 @@ Logic :
     - we have to add the length of arr1 and length of arr2
     - if the addition "finLen" is even then the middle element and the element before the middle element has to be added "midAdd" and then print the (addition (midAdd) divided by two)
     - and if the addition is odd then you can directly print the middle element
+.
