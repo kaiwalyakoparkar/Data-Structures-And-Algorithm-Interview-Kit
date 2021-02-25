@@ -4,40 +4,50 @@ import java.util.*;
 public class Solution{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        int arr[][] = new int[n][m];
-        for(int i = 0; i < arr.length; i++){
-            for(int j = 0; j < arr[0].length; j++){
-                arr[i][j] = sc.nextInt();
+        int r= sc.nextInt();
+        int c = sc.nextInt();
+        int matrix[][] = new int[r][c];
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix[0].length; j++){
+                matrix[i][j] = sc.nextInt();
             }
         }
 
-        int min = 0;
-        int max = arr.length-1;
 
-        while(min < max){
-            //up wall
-            for(int i = min; i <= max; i++){
-                System.out.print(arr[min][i]+" ");
-            }
-            //right wall
-            for(int i = min+1; i <= max; i++){
-                System.out.print(arr[i][max]+" ");
-            }
-            //down wall
-            for(int i = max-1; i >=min; i--){
-                System.out.print(arr[max][i]+" ");
-            }
-            //right wall
+        ArrayList<Integer> list = new ArrayList<>();
+        boolean [][] visited = new boolean[r][c];
+        int x=0;
+        int y=0;
+        while(x<=r-1 && y<=c-1){
+            for(int i=y;i<c;i++){
+                if(visited[x][i]) break;
+                list.add(matrix[x][i]);
+                visited[x][i]=true;
 
-            for(int i = max-1; i > 0; i--){
-                if(i != min){
-                    System.out.print(arr[i][min]+" ");
-                }
             }
-            min++;
-            max--;
+            x++;
+            for(int i=x; i<r;i++){
+                if(visited[i][c-1]) break;
+                list.add(matrix[i][c-1]);
+                visited[i][c-1]=true;
+            }
+            c--;
+            for(int i=c-1;i>=y;i--){
+                if(visited[r-1][i]) break;
+                list.add(matrix[r-1][i]);
+                visited[r-1][i] = true;
+            }
+            r--;
+            for(int i=r-1;i>=x;i--){
+                if(visited[i][y]) break;
+                list.add(matrix[i][y]);
+                visited[i][y]=true;
+            }
+            y++;
+        }
+
+        for(int i = 0; i < list.size(); i++){
+            System.out.print(list.get(i)+" ");
         }
     }
 }
