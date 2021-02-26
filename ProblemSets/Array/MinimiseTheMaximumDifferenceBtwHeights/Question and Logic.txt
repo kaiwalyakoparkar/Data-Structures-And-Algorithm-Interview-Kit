@@ -14,3 +14,19 @@ The array can be modified as
 the largest and the smallest is 8-3 = 5.
 ```
 
+Answer : 
+
+Logic :
+
+1. Naive Approach O(n logn): 
+    - The idea is to sort all elements increasing order. And for all elements check if subtract(element-k) and add(element+k) makes any changes or not.
+    - Below is the implementation of the above approach:
+    - Sort the given array
+    - after sorting declare 3 variables namely
+    - ans = last element - first element
+    - small = first element + k
+    - big = last element - k
+    - place pointer on second element and subtrack  = arr [ i ]  - k and then add = arr [ i ] + k
+    - if add < big do nothing
+    - if subtrack > small do nothing
+    - at last return min ( ans, big-small)
