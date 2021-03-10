@@ -1,0 +1,29 @@
+Question :
+
+Given a string **S**, check if it is palindrome or not.
+
+**Example 1:**
+
+```
+Input: S = "abba"
+Output: 1
+Explanation:S is a palindrome
+```
+
+**Example 2:**
+
+```
+Input: S = "abc"
+Output: 0
+Explanation:S is not a palindrome
+```
+
+- Answer :
+
+    1. Brute-force approach :
+        - Take the input as String
+        - Declare 3 variables i = 0 and j = S.length( )-1 and flag = 1
+        - now run a loop will i ≤ j
+        - in the loop compare if S.charAt( i ) == S.charAt( j )
+        - if it is same then continue the loop otherwise make flag as 0
+        - at the end if flag is 1 then it is palindrome otherwise it is not.
