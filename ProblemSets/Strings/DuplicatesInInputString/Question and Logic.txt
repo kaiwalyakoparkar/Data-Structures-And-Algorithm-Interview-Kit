@@ -1,0 +1,13 @@
+Question : 
+
+**Write an efficient program to print all the duplicates and their counts in the input string**
+
+**Method 1:** Using hashing**Algorithm:** Let input string be “geeksforgeeks” **1:** Construct character count array from the input string.count[‘e’] = 4 count[‘g’] = 2 count[‘k’] = 2
+
+- Answer :
+    1. Using Maps :
+        - Take the input as string
+        - Declare a HashMaps of Characters and Integers
+        - if the element is not present in the map put it as < ' char ' , 1 >
+        - if the element is present then update the number corresponding to the character by 1
+        - At last iterate the Map and if the number is greater than 1 then print the character with the number adjacent to it.
