@@ -2,11 +2,49 @@ package LongestPalindromicSubstring;
 import java.util.*;
 
 public class Solution{
+
+    static void printSubStr(String str, int low, int high) {
+        for (int i = low; i <= high; ++i)
+            System.out.print(str.charAt(i));
+    }
+
+    // This function prints the
+    // longest palindrome subString
+    // It also returns the length
+    // of the longest palindrome
+    static void bruteForce(String str) {
+        // get length of input String
+        int n = str.length();
+
+        // All subStrings of length 1
+        // are palindromes
+        int maxLength = 1, start = 0;
+
+        // Nested loop to mark start and end index
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = i; j < str.length(); j++) {
+                int flag = 1;
+
+                // Check palindrome
+                for (int k = 0; k < (j - i + 1) / 2; k++)
+                    if (str.charAt(i + k) != str.charAt(j - k))
+                        flag = 0;
+
+                // Palindrome
+                if (flag != 0 && (j - i + 1) > maxLength) {
+                    start = i;
+                    maxLength = j - i + 1;
+                }
+            }
+        }
+
+        printSubStr(str, start, start + maxLength - 1);
+
+        // return length of LPS
+    }
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        StringBuilder sb = new StringBuilder("");
         String s = sc.next();
-        sb.append(s);
 
         //Brute force approach
         /** 
@@ -16,30 +54,9 @@ public class Solution{
          * Constantly rotate the 1pointer and 2pointer and check if the string is palindrome
          * If it is palindrome and the size of current string is bigger than than length string then replace the length string with current string.
         */
-        StringBuilder resultString = new StringBuilder("");
-        int resultLength = 0;
-        for (int start = 0; start < sb.length()-1; start++) {
-            int flag = 0;
-            for (int end = start; end < sb.length(); end++) {
-                int a = start;
-                int b = end;
-                while(a <= b){
-                    if(sb.charAt(a)!=sb.charAt(b)){
-                        flag = 1;
-                    }
-                    a++;
-                    b--;
-                }
-                if(flag==0){
-                    if((end+1)-start > resultLength){
-                        String temp = s.substring(start, end+1); //resultString.length()){
-                        resultString = sb.append(temp);
-                        resultLength = (end+1)-start;
-                    }
-                }
-            }
-        }
-        System.out.println(resultString);
-        System.out.println(resultLength);
+        bruteForce(s);
+
+        //This is optimized approach
+        
     }
 }
