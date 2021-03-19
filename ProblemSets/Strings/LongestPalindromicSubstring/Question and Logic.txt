@@ -1,0 +1,38 @@
+Question :
+
+The **count-and-say** sequence is a sequence of digit strings defined by the recursive formula:
+
+- `countAndSay(1) = "1"`
+- `countAndSay(n)` is the way you would "say" the digit string from `countAndSay(n-1)`, which is then converted into a different digit string.
+
+For example, the saying and conversion for digit string `"3322251"`:
+
+![https://assets.leetcode.com/uploads/2020/10/23/countandsay.jpg](https://assets.leetcode.com/uploads/2020/10/23/countandsay.jpg)
+
+Given a positive integer `n`, return *the* `nth` *term of the **count-and-say** sequence*.
+
+```
+Input: n = 4
+Output: "1211"
+Explanation:
+countAndSay(1) = "1"
+countAndSay(2) = say "1" = one 1 = "11"
+countAndSay(3) = say "11" = two 1's = "21"
+countAndSay(4) = say "21" = one 2 + one 1 = "12" + "11" = "1211"
+```
+
+Answer :
+
+1. Brute-Force Approach :
+    - Take input as n
+    - If the n is 0 then return null
+    - If the n is 1 then return "1" as it is base case
+    - If the n is 2 then return "11" as it is base case
+    - Delare string s as "11"
+    - Now iterate " i " loop from 3 to nth location
+    - add delimator of the end of the s string "$ , &, @" etc
+    - initialize counter as 1 and string t as empty
+    - Now run jth loop from 1 to length of s and check if s[ j ] ≠ s [ j-1 ] if yes then add counter to t string and add j-1 to the t string
+    - if no then simply increment the counter
+    - after getting out of j loop add t into s ( s = t )
+    - and at the end return s and print it.

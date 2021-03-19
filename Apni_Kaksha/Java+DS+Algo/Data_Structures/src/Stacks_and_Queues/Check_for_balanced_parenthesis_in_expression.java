@@ -9,7 +9,6 @@ public class Check_for_balanced_parenthesis_in_expression {
 		java.util.Stack<Character> stack = new java.util.Stack<>();
 		
 		String ch = sc.nextLine();
-		boolean Balanced = true;
 		sc.close();
 		for(int i=0; i<ch.length(); i++) {
 			char element = ch.charAt(i);
