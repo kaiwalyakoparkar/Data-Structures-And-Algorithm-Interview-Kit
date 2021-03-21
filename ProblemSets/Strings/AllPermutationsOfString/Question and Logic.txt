@@ -1,0 +1,19 @@
+**Question :**
+
+Given a string S. The task is to print all permutations of a given string.
+
+**Example 1:**
+
+```
+Input:ABC
+Output:ABC ACB BAC BCA CAB CBA
+Explanation:Given string ABC has permutations in 6
+forms as ABC, ACB, BAC, BCA, CAB and CBA .
+```
+
+**Logic:**
+
+1. Mapping Approach O(n! * n) complexity with O(n) space complexity :
+    - A permutation, also called an “arrangement number” or “order,” is a rearrangement of the elements of an ordered list S into a one-to-one correspondence with S itself. A string of length n has n! permutation.
+    - Below are the permutations of string ABC. ABC ACB BAC BCA CBA CAB
+    - Here is a solution that is used as a basis in backtracking.
