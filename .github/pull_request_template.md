@@ -21,12 +21,12 @@ Here comes all the changes proposed through this PR
 
 ## Check List (Check all the boxes which are applicable)<!--Follow above conventions to check the box-->
 
-- [ ] Passing all the tests
-- [ ] Fixes the mentioned issue without conflicts
-- [ ] This changes needs documentation
-- [ ] I have made the required changes in documentation
+- [ ] My code follows the code style of this project.
+- [ ] My change requires a change to the documentation.
+- [ ] I have updated the documentation accordingly.
+- [ ] All new and existing tests passed.
 - [ ] This PR does not contain copyrighted content.
-
+- [ ] The title of my pull request is a short description of the requested changes.
 <!--Add screen shots of the changed output-->
 ## Screenshots 
 Add all the screenshots which support your changes
