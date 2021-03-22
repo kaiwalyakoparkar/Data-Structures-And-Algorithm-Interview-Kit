@@ -1,0 +1,22 @@
+**Question :**  
+
+Given a binary string **str** of length **N**, the task is to find the maximum count of substrings **str** can be divided into such that all the substrings are balanced i.e. they have equal number of **0s** and **1s**. If it is not possible to split **str** satisfying the conditions then print **-1**.
+
+**Example:**
+
+```
+Input: str = “0100110101”
+Output: 4The required substrings are “01”, “0011”, “01” and “01”.
+
+Input: str = “0111100010”
+Output: 3
+```
+
+**Logic:**
+
+1. Simple Technique O( n ):
+    - Take input as String
+    - Run a loop through the string
+    - and keep the count of the 0's and 1's and if the no of 0's match no of 1's then increment the number of pairs
+    - at last if the number of pairs is 0 print -1
+    - else print the pairs
