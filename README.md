@@ -24,3 +24,8 @@
 - All the programs are written in java
 - Current Ongoing topic "Strings"
 - All the programs are divided by the generes or programs for the specific platform
+
+## Credits:
+<a href="https://github.com/kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit" />
+</a>
