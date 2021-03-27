@@ -1,6 +1,6 @@
 # Median Of Row Wise Sorted Matrix
 
-Given a row wise sorted matrix of size **R x C** where **R** and **C** are always odd, find the median of the matrix.
+Given a row wise sorted matrix of size **R x C** where **R** and **C** are always odd,Â find the median of the matrix.
 
 ### Example :
 
@@ -8,11 +8,11 @@ Given a row wise sorted matrix of size **R x C** where **R** and **C** are alway
 Input :
 	R = 3, C = 3
 	M = [[1, 3, 5], 
-         [2, 6, 9], 
-         [3, 6, 9]
-        ];
+             [2, 6, 9], 
+             [3, 6, 9]
+            ];
 
-Output : 5
+Output :Â 5
 ```
 **Explanation :** Sorting matrix elements gives us {1,2,3,3,5,6,6,9,9}. Hence, 5 is median.
 
