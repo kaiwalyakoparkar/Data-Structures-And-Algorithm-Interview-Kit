@@ -8,10 +8,10 @@ Given a binary matrix. Find the maximum area of a rectangle formed only of 1s in
 Input :
 	n = 4, m = 4
 	M[][] = {{0 1 1 0},
-             {1 1 1 1},
-             {1 1 1 1},
-             {1 1 0 0}
-            };
+                 {1 1 1 1},
+                 {1 1 1 1},
+                 {1 1 0 0}
+                };
 
 Output : 8
 ```
@@ -22,7 +22,7 @@ Output : 8
 1 1 1 1
 1 1 0 0
 ```
-the max size rectangle is 
+the max size rectangleÂ isÂ 
 ```
 1 1 1 1
 1 1 1 1
