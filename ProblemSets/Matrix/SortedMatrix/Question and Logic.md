@@ -1,6 +1,6 @@
 # Sorted Matrix
 
-Given an **N x N** matrix Mat. Sort all elements of the matrix.
+Given an **N x N**Â matrix Mat. SortÂ all elements of the matrix.
 
 ### Example :
 
@@ -8,10 +8,10 @@ Given an **N x N** matrix Mat. Sort all elements of the matrix.
 Input :
 	N=4
 	Mat=[[10,20,30,40],
-         [15,25,35,45],
-         [27,29,37,48],
-         [32,33,39,50]
-        ];
+             [15,25,35,45],
+             [27,29,37,48],
+             [32,33,39,50]
+            ];
 
 Output :
 	10 15 20 25 
