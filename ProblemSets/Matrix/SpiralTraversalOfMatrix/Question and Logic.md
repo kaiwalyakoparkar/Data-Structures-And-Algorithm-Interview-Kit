@@ -1,6 +1,6 @@
 # Spiral Traversal Of Matrix
 
-Given a matrix of size **R x C**. Traverse the matrix in spiral form.
+Given aÂ matrixÂ of size **R x C**. Traverse the matrix in spiral form.
 
 ### Example :
 
@@ -8,10 +8,10 @@ Given a matrix of size **R x C**. Traverse the matrix in spiral form.
 Input :
 	R = 4, C = 4
 	matrix[][] = {{1, 2, 3, 4},
-                  {5, 6, 7, 8},
-                  {9, 10, 11, 12},
-                  {13, 14, 15,16}
-                 };
+                      {5, 6, 7, 8},
+                      {9, 10, 11, 12},
+                      {13, 14, 15,16}
+                     };
 								 
 Output : 
 	1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
@@ -20,9 +20,9 @@ Output :
 ### Logic :
 
 1. #### Traditional approach :
-    - create a recursive function that takes a matrix and some variables  as parameters
+    - create a recursive function that takes a matrix and some variablesÂ Â as parameters
 
-        (k – starting row index, m – ending row index, l – starting column index, n – ending column index)
+        (k â€“ starting row index, m â€“ ending row index, l â€“ starting column index, n â€“ ending column index)
 
     - Check the base cases (stating index is less than or equal to ending index) and print the boundary elements in clockwise manner
     - Print the top row, i.e. Print the elements of kth row from column index l to n, and increase the count of k.
