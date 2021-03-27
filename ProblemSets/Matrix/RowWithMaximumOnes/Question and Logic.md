@@ -1,6 +1,6 @@
 # Row With Maximum Ones
 
-Given a boolean 2D array of **n x m** dimensions where each row is sorted. Find the 0-based index of the first row that has the maximum number of **1's**.
+Given a boolean 2D array of **n x m** dimensions where each row is sorted. FindÂ theÂ 0-based index of the first rowÂ that hasÂ the maximum number ofÂ **1's**.
 
 ### Example :
 
@@ -8,10 +8,10 @@ Given a boolean 2D array of **n x m** dimensions where each row is sorted. Find 
 Input : 
 	N = 4 , M = 4
 	Arr[][] = {{0, 1, 1, 1},
-               {0, 0, 1, 1},
-               {1, 1, 1, 1},
-               {0, 0, 0, 0}
-              };
+                   {0, 0, 1, 1},
+                   {1, 1, 1, 1},
+                   {0, 0, 0, 0}
+                  };
 
 Output : 2
 ```
