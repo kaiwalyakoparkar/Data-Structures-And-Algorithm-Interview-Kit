@@ -1,6 +1,6 @@
 # K<sup>th</sup> Element In Matrix
 
-Given a **N x N** matrix, where every row and column is sorted in non-decreasing order. Find the k<sup>th</sup> smallest element in the matrix.
+Given aÂ **NÂ x N**Â matrix, where every row and column is sorted in non-decreasing order. Find the k<sup>th</sup> smallest element in the matrix.
 
 ### Example :
 
@@ -8,10 +8,10 @@ Given a **N x N** matrix, where every row and column is sorted in non-decreasing
 Input :
 	N = 4
 	mat[][] = {{16, 28, 60, 64},
-               {22, 41, 63, 91},
-               {27, 50, 87, 93},
-               {36, 78, 87, 94 }
-              };
+                   {22, 41, 63, 91},
+                   {27, 50, 87, 93},
+                   {36, 78, 87, 94 }
+                  };
 	K = 3
 
 Output : 27
