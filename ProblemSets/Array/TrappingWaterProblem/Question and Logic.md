@@ -1,21 +1,20 @@
-Question : 
+# Trapping Water Problem
 
 Given an array **arr[]** of **N** non-negative integers representing the height of blocks. If width of each block is 1, compute how much water can be trapped between the blocks during the rainy season. 
 
-**Example 1:**
+### Example :
 
 ```
-Input:
-N = 6
-arr[] = {3,0,0,2,0,4}
-Output:
-10
+Input :
+	N = 6
+	arr[] = {3,0,0,2,0,4}
 
+Output : 10
 ```
 
-Answer : 
+### Logic :
 
-1. Brute-Force Approach O( n ^ 2 ) complexity :
+1. #### Brute-Force Approach O( n ^ 2 ) complexity :
 
     - **Approach:** The idea is to traverse every array element and find the highest bars on left and right sides. Take the smaller of two heights. The difference between the smaller height and height of the current element is the amount of water that can be stored in this array element.
 
@@ -28,11 +27,9 @@ Answer :
 
         - Print the total amount of water stored.
 
-
-2. Optimal Approach with O( n ) complexity : 
+1. #### Optimal Approach with O( n ) complexity : 
 
     - **Approach:** In the previous solution, to find the highest bar on the left and right, array traversal is needed which reduces the efficiency of the solution. To make this efficient one must pre-compute the highest bar on the left and right of every bar in linear time. Then use these pre-computed values to find the amount of water in every array element.
-
 
     - **Algorithm:**
         - Create two array  and  of size n. create a variable .left right max_ = INT_MIN
