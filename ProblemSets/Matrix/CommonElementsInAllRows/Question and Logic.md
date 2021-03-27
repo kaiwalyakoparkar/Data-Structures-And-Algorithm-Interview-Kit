@@ -1,35 +1,33 @@
-Question :
+# Common Elements In All Rows
 
-Given an m x n matrix, find all common elements present in all rows in O(mn) time and one traversal of matrix.
+Given an **m x n** matrix, find all common elements present in all rows in **O(mn)** time and one traversal of matrix.
 
-**Example:**
+### Example :
 
 ```
-Input:
-mat[4][5] = {{1, 2, 1, 4, 8},
-             {3, 7, 8, 5, 1},
-             {8, 7, 7, 3, 1},
-             {8, 1, 2, 7, 9},
-            };
+Input :
+	mat[4][5] = {{1, 2, 1, 4, 8},
+                 {3, 7, 8, 5, 1},
+                 {8, 7, 7, 3, 1},
+                 {8, 1, 2, 7, 9},
+                };
 
-Output:
-1 8 or 8 1
-8 and 1 are present in all rows.
+Output :
+	1 8 or 8 1
+	8 and 1 are present in all rows.
 ```
 
-Answer : 
+### Logic :
 
-1. Brute-Force approach O(n^2 * m^2) :
+1. #### Brute-Force approach O(n^2 * m^2) :
     - Take input as matrix
     - Run 4 loops for every element in the first row to check if it present in all other rows
 
-
-2. Better Approach O(n * logm) :
+1. #### Better Approach O(n * logm) :
     - Take input as matrix
     - A better solution is to sort all rows in the matrix and use similar approach as discussed here. Sorting will take O(mnlogn) time and finding common elements will take O(mn) time. So overall time complexity of this solution is O(mnlogn)
 
-
-3. Optimal Approach O(n*m) :
+1. #### Optimal Approach O(n*m) :
     - Take input as matrix
     - The idea is to use maps.
     - We initially insert all elements of the first row in an map. For every other element in remaining rows, we check if it is present in the map.
