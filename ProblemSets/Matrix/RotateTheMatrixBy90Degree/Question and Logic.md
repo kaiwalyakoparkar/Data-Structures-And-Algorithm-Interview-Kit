@@ -1,24 +1,24 @@
-Question : 
+# Rotate The Matrix By 90 Degree
 
 Given a square matrix, turn it by 90 degrees in clockwise direction without using any extra space.
 
-**Examples:**
+### Examples :
 
 ```
-Input:
-1 2 3
-4 5 6
-7 8 9
-Output:
-7 4 1
-8 5 2
-9 6 3
-
+Input :
+	1 2 3
+	4 5 6
+	7 8 9
+	
+Output :
+	7 4 1
+	8 5 2
+	9 6 3
 ```
 
-Answer :
+### Logic :
 
-1. Brute-Force Approach :
+1. #### Brute-Force Approach :
     - Take input as a matrix and size of matrix as n
     - declare a new matrix ( rotMatrix )of size n x n
     - declare two variables p = n-1 and c = 0
@@ -26,8 +26,7 @@ Answer :
     - after comming out of j loop while entering again in i loop that means while changing the row in the matrix make c = 0 and p - -
     - At the end print the rotMatrix
 
-
-2. Optimal Approach :
+1. #### Optimal Approach :
     - Take input as a matrix and size of matrix as n
     - make the transpose of the matris that means swap the element in the row with  element in the column
     - eg : arr[ i ] [ j ] with arr[ j ] [ i ]
