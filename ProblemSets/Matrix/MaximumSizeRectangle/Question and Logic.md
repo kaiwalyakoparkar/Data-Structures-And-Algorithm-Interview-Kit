@@ -1,34 +1,37 @@
-Question : 
+# Maximum Size Rectangle
 
 Given a binary matrix. Find the maximum area of a rectangle formed only of 1s in the given matrix.
 
-**Example 1:**
+### Example :
 
 ```
-Input:
-n = 4, m = 4
-M[][] = {{0 1 1 0},
-         {1 1 1 1},
-         {1 1 1 1},
-         {1 1 0 0}}
-Output: 8
-Explanation: For the above test case the
-matrix will look like
+Input :
+	n = 4, m = 4
+	M[][] = {{0 1 1 0},
+                 {1 1 1 1},
+                 {1 1 1 1},
+                 {1 1 0 0}
+                };
+
+Output : 8
+```
+**Explanation :** For the above test case the matrix will look like
+```
 0 1 1 0
 1 1 1 1
 1 1 1 1
 1 1 0 0
-the max size rectangle is 
-1 1 1 1
-1 1 1 1
-and area is 4 *2 = 8.
 ```
+the max size rectangleÂ isÂ 
+```
+1 1 1 1
+1 1 1 1
+```
+and area is 4 *2 = 8.
 
-Answer : 
+### Logic :
 
-Logic :
-
-1. Histogram & Dynamic Programming :
+1. #### Histogram & Dynamic Programming :
     - Maintain a stack
     - If stack is empty or value at index of stack is less than or equal to value at current
     - index, push this into stack.
