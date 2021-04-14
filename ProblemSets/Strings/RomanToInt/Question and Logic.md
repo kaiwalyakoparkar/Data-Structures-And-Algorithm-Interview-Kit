@@ -14,10 +14,9 @@ M             1000
 ```
 **Logic**
 
-1. Simple Approach :
-    - Take input as a string
-    - Make a function which returns the integer value for the specified roman character
-    - now declare a varible answer with the int value of the last character
-    - run a loop from s.length()-2 to 0 and while going check if the current element is smaller than the i+1
-    - if yes then substract i+1th element from ans and then add the substraction of the current element and the i+1th element in the answer
-    - At the end print the answer.
+1. Mapping Approach :
+- Take the input as a string of Roman characters
+- Decalre a map and add all the int values to it's respective roman character
+- run a for loop and see if i>0 and charAt( i ) > chat( i-1 )
+    - If yes then add values of charAt( i ) - 2 * charAt( i-1) in final answer
+    - If no then add value of charAt( i ) in final answer
