@@ -9,7 +9,7 @@ public class Solution{
         int n = sc.nextInt();
         int target = sc.nextInt();
         int nums[] = new int[n];
-        for(int i = 0; i < nums.length; i++){
+        for(int i = 1; i < nums.length; i++){
             nums[i] = sc.nextInt();
         }
 
