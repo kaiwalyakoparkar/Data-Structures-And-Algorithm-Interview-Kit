@@ -30,6 +30,8 @@ public class Solution{
             }
         }
 
+
+        //Reversing the linked list Iteratively
         void reverseIterative(){
             Node newHead = null;
             while(head != null){
@@ -39,6 +41,27 @@ public class Solution{
                 head = newNext;
             }
             head = newHead;
+        }
+
+        //Reversing the liked list recursively
+        //Helper function for recursion
+        void reverseHelper(Node node){
+            if(node == null){
+                return;
+            }
+            reverseHelper(node.next);
+            if(node == tail){
+                //lol do nothing
+            }else{
+                node.next.next = node;
+            }
+        }
+        //Main code for recursion
+        void reverseRecursive(){
+            reverseHelper(head);
+            Node newNode = head;
+            head = tail;
+            tail = newNode;
         }
     }
     public static void main(String args[]){
@@ -50,15 +73,23 @@ public class Solution{
             li.add(value);
         }
 
-        System.out.println("Linked List initiallyl");
-        li.display();
+        System.out.println("Linked List initially");
+        li.display(); // Displaying initial list
 
-        li.reverseIterative();
+        //li.reverseIterative();
+
+        //System.out.println();
+       // System.out.println("Linked List After reversing iteratively");
+        //System.out.println();
+
+        //li.display();//Displaying the iterative answer
+
+        li.reverseRecursive();
 
         System.out.println();
-        System.out.println("Linked List After reversing");
+        System.out.println("Linked List After reversing recursively");
         System.out.println();
 
-        li.display();
+        li.display();//Displaying the recursive answer
     }
 }
