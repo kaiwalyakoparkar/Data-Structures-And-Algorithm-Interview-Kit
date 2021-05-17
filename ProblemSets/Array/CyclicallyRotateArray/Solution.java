@@ -4,8 +4,9 @@ import java.util.*;
 public class Solution{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int t = sc.nextInt();
+        int n = sc.nextInt();//This is the number of elements in the Array
+        int t = sc.nextInt();//This is the number of rotations to be done
+
         int arr[] = new int[n];
         for(int i = 0; i < arr.length; i++){
             arr[i] = sc.nextInt();
