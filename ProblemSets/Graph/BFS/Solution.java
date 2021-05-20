@@ -31,7 +31,7 @@ public class Solution{
             boolean visited[] = new boolean[v];
 
             //Creting a queue
-            LinkedList<Integer> queue = new LinkedList<>();
+            Queue<Integer> queue = new LinkedList<>();
 
             //Making first passed element as visited and adding it to queue
             visited[s] = true;
@@ -50,7 +50,7 @@ public class Solution{
                 while(i.hasNext()){
                     int n = i.next();
                     //If the node is not visited then mark it as visited and add it to queue
-                    if(!visited[n]){
+                    if(visited[n]==false){
                         visited[n] = true;
                         queue.add(n);
                     }
