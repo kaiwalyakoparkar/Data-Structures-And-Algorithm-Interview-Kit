@@ -2,11 +2,7 @@ package LongestSubstringWithUniqueCharacters;
 import java.util.*;
 
 public class Solution{
-    /*
-    @param - s- Takes in string with characters and without any special character in between
-    @returm - max - returns the maximum length of substring with unique characters
-    */
-    public static int findTheMaxLength(String s){
+    public static int worstTimeComplexity(String s){
         if(s.length()==0){
             return 0;
         }
@@ -40,6 +36,14 @@ public class Solution{
             }
         }
         return max;
+    }
+    /*
+    @param - s- Takes in string with characters and without any special character in between
+    @returm - max - returns the maximum length of substring with unique characters
+    */
+    public static int findTheMaxLength(String s){
+        int res = worstTimeComplexity(s);
+        return res;
     }
 
     public static void main(String arg[]){
