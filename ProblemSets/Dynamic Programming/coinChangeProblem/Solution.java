@@ -2,64 +2,55 @@ package coinChangeProblem;
 import java.util.*;
 
 public class Solution{
-
+    //This displays the dp matrix (Only for debugging purpose)
+    public static void display(int dp[][]){
+        for(int i = 0; i < dp.length; i++){
+            for(int j = 0; j < dp[0].length; j++){
+                System.out.print(dp[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
     /*
     @param 1 : s[] :- This contains all the available coins
     @param 2: n :- This contains total amount to be paid
     @param 3: m :- This contains no of coins available
     @retun combination :- This returns all the possible combinations to the main method
     */
-    public static int count(int s[], int n, int m){
-        if(s.length == 0){
-            return 0;
-        }else if(s.length ==1 && n % s[0] == 0){
-            return 1;
+    public static int count(int s[], int change, int coins){
+        int dp[][]=new int [change][coins+1];
+        for(int i = 0 ; i < change ;i++){
+            dp[i][0]=1;
         }
-
-        int combination = 0;
-        int dp[][] = new int[m][n+1];
-
-        for(int i = 0; i < dp.length; i++){
-            dp[i][0] = 1;
-        }
-        for(int i = 0; i < dp[0].length; i++){
-            dp[0][i] = 1;
-        }
-
-        for(int i = 1; i < dp.length; i++){
-            for(int j = 0; j < dp[0].length; j++){
-                if(dp[i][j]==0 && s[i] > j){
-                    dp[i][j] = dp[i-1][j];
-                }else if(dp[i][j]==0 && s[i] <= j){
-                    dp[i][j] = dp[i-1][j]+dp[i][j-s[i]];
+        for(int i = 0 ;i < change ; i++){
+            for(int j=1; j<=coins ;j++){
+                if(i>0){
+                    dp[i][j]=dp[i-1][j];
+                }
+                if(s[i]<=j){
+                    dp[i][j]=dp[i][j]+dp[i][j-s[i]];
                 }
             }
         }
-        combination = dp[m-1][n];
-        //Debugging purpose
-        // for(int i = 0; i < dp.length; i++){
-        //     for(int j = 0; j < dp[0].length; j++){
-        //         System.out.print(dp[i][j]+" ");
-        //     }
-        //     System.out.println();
-        // }
 
-        return combination;
+        display(dp);
+        return dp[change-1][coins];
     }
+
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         //Enter the total price to pay
-        int n = sc.nextInt();
+        int query = sc.nextInt();
         //Enter the elements in the array
-        int m = sc.nextInt();
+        int n = sc.nextInt();
         //Taking the input for available coins
-        int coins[] = new int[m];
+        int coins[] = new int[n];
         for(int i = 0; i < coins.length; i++){
             coins[i] = sc.nextInt();
         }
 
         //Computing the no. of combination
-        int combination = count(coins, n, m);
+        int combination = count(coins, query, n);
 
         //Printing the output
         System.out.println("There are total "+combination+" combinations to pay !");
