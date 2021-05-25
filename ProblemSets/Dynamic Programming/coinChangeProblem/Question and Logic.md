@@ -19,3 +19,6 @@ Explanation: Five Possible ways are:
 {2,2,2,2,2}, {2,2,3,3}, {2,2,6}, {2,3,5}
 and {5,5}.
 ```
+**Answer:**
+
+Checkout Tushar roy's video
