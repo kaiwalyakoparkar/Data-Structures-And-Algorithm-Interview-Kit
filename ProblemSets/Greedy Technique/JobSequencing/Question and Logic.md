@@ -14,3 +14,15 @@ Explanation:
 2 jobs can be done with
 maximum profit of 60 (20+40).
 ```
+
+Example 2:
+
+Input:
+N = 5
+Jobs = (1,2,100)(2,1,19)(3,2,27)
+(4,1,25)(5,1,15)
+Output:
+2 127
+Explanation:
+2 jobs can be done with
+maximum profit of 127 (100+27).
