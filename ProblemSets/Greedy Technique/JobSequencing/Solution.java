@@ -35,15 +35,13 @@ public class Solution{
             //Condition 1
             if(maxProfit[arr[i]-1] == 0){
                 maxProfit[arr[i]-1] = arr[i+1];
-                display(maxProfit);
+                // display(maxProfit);
             }
-
             //Condition 2
             else if(arr[i+1] > maxProfit[arr[i]-1]){
                 maxProfit[arr[i]-1] = arr[i+1];
-                display(maxProfit);
+                // display(maxProfit);
             }
-
             //Condition 3
             else if(arr[i]-j >= 0){
                 boolean flag = false;
@@ -51,26 +49,17 @@ public class Solution{
                     if(maxProfit[arr[i]-j] == 0){
                         maxProfit[arr[i]-j] = arr[i+1];
                         flag = true;
-                        display(maxProfit);
+                        // display(maxProfit);
                         break;
                     }else if(maxProfit[arr[i]-j] != 0 && arr[i+1] > maxProfit[arr[i]-j]){
                         maxProfit[(arr[i]-j)] = arr[i+1];
-                        display(maxProfit);
+                        // display(maxProfit);
                         flag = true;
                         break;
                     }
                     j++;
                 }while(flag != true && arr[i]-j >= 0);
             }
-            //else{
-            //     for(int j = arr[i-1]; j >= 0; j--){
-            //         if(maxProfit[arr[i]-1] == 0){
-            //             maxProfit[arr[i]-1] = arr[i+1];
-            //         }else if(maxProfit[arr[i]-1] != 0 && arr[i+1] > maxProfit[arr[i]-1]){
-            //             maxProfit[arr[i]-1] = arr[i+1];
-            //         }
-            //     }
-            // }
         }
 
         //Debugging purpose only!
