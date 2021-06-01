@@ -2,6 +2,15 @@ package JobSequencing;
 import java.util.*;
 
 public class Solution{
+    //Debugging purpose
+    public static void display(int[] debug){
+        //Prints the entire arry so that the algorithm can be dubugged
+        for(int i = 0; i < debug.length; i++){
+            System.out.print(debug[i]+" ");
+        }
+        System.out.println();//Just prints extra line
+    }
+
     //Method which finds the maximum profit job array
     public static int[] jobSequencing(int[] arr, int n){
         // Array is in (Job id, Deadline, Profit) format
@@ -19,23 +28,42 @@ public class Solution{
 
         //Declaring array which will contain maxProfit range
         int maxProfit[] = new int[maxDeadline];
+        int j = 2;
 
         //Main logic execution
         for(int i = 1; i < arr.length; i = i+3){
+            //Condition 1
             if(maxProfit[arr[i]-1] == 0){
                 maxProfit[arr[i]-1] = arr[i+1];
-            }else if(maxProfit[arr[i]-1] != 0 && arr[i+1] > maxProfit[arr[i]-1]){
+                // display(maxProfit);
+            }
+            //Condition 2
+            else if(arr[i+1] > maxProfit[arr[i]-1]){
                 maxProfit[arr[i]-1] = arr[i+1];
-            }else{
-                for(int j = arr[i-1]; j >= 0; j--){
-                    if(maxProfit[arr[i]-1] == 0){
-                        maxProfit[arr[i]-1] = arr[i+1];
-                    }else if(maxProfit[arr[i]-1] != 0 && arr[i+1] > maxProfit[arr[i]-1]){
-                        maxProfit[arr[i]-1] = arr[i+1];
+                // display(maxProfit);
+            }
+            //Condition 3
+            else if(arr[i]-j >= 0){
+                boolean flag = false;
+                do{
+                    if(maxProfit[arr[i]-j] == 0){
+                        maxProfit[arr[i]-j] = arr[i+1];
+                        flag = true;
+                        // display(maxProfit);
+                        break;
+                    }else if(maxProfit[arr[i]-j] != 0 && arr[i+1] > maxProfit[arr[i]-j]){
+                        maxProfit[(arr[i]-j)] = arr[i+1];
+                        // display(maxProfit);
+                        flag = true;
+                        break;
                     }
-                }
+                    j++;
+                }while(flag != true && arr[i]-j >= 0);
             }
         }
+
+        //Debugging purpose only!
+        display(maxProfit);
 
         //Returning the final profit array
         return maxProfit;
@@ -69,5 +97,5 @@ Test case 1:
 
 Test case 2:
 5
-1 2 100 2 1 19 3 2 27 4 1 25 5 1 15)
+1 2 100 2 1 19 3 2 27 4 1 25 5 1 15
 */
