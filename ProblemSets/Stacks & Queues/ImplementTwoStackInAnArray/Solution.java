@@ -100,7 +100,7 @@ public class Solution{
 		//Pop 1 Function
 		public int pop1(){
 			if(isEmpty()){
-				System.out.println("Stack 1 empty");
+				return -1;
 			}
 			return arr[top1--];
 		}
@@ -108,24 +108,9 @@ public class Solution{
 		//Pop 2 Function
 		public int pop2(){
 			if(isEmpty()){
-				System.out.println("Stack 2 empty");
 				return -1;
 			}
 			return arr[top2++];
-		}
-
-		public void printStack1(){
-			while(top1 != -1){
-				int temp = pop1();
-				System.out.print(temp+" ");
-			}
-		}
-
-		public void printStack2(){
-			while(top2 != size){
-				int temp = pop2();
-				System.out.print(temp+" ");
-			}
 		}
 
 		/*End for this problem*/
@@ -141,10 +126,8 @@ public class Solution{
 		st.push1(2);
 		st.push1(3);
 		st.push2(4);
-		st.pop1();
-		st.pop2();
-		st.pop2();
-		st.printStack1();
-		st.printStack2();
+		System.out.print(st.pop1()+" ");
+		System.out.print(st.pop2()+" ");
+		System.out.print(st.pop2()+" ");
 	}
 }
