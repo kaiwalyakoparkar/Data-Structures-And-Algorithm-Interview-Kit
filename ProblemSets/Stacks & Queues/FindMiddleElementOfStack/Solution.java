@@ -39,6 +39,11 @@ public class Solution{
 			}
 		}
 
+		//Finds in peek
+		int peek(){
+			return top;
+		}
+
 		//Pops the element from the stack
 		int pop(){
 			if(isEmpty()){
@@ -61,6 +66,27 @@ public class Solution{
 
 			int currSize = top+1;
 			return arr[currSize/2];
+		}
+
+		//This will delete the provided data element from the stack
+		void deleteElement(int data, Stack st){
+			Stack temp = new Stack(size);
+			while(top != -1){
+				if(arr[st.peek()] == data){
+					int poped = st.pop();
+					for(int i = temp.peek(); i >= 0; i--){
+						int shiftEle = temp.pop();
+						st.push(shiftEle);
+					}
+					System.out.println("After Deleting Element Stack is: ");
+					st.display();
+				}else if(st.peek() == -1){
+					System.out.println("Element Does not exist");
+				}else{
+					int stPoped = st.pop();
+					temp.push(stPoped);
+				}
+			}
 		}
 
 		//Display Stack (Debugging purpose only!!!)
@@ -91,5 +117,11 @@ public class Solution{
 		System.out.println();
 		int mid = st.findMiddle();
 		System.out.println("The middle element is: "+mid);
+
+		//Delete certain element
+		System.out.println("Enter the element you want to delete: ");
+		int ele = sc.nextInt();
+		st.deleteElement(ele, st);
+
 	}	
 }
