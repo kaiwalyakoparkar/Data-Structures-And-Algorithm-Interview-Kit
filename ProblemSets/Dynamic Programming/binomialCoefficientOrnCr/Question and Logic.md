@@ -24,11 +24,11 @@ Explaination: r is greater than n.
 n = 3 and r = 2
 
 Step 0 = dp[ 1,  0, 0];
-			 |  \+/\+/
+	     |  \+/\+/
 Step 1 = dp[ 1,  1, 0];
-			 | \+/\+/
+	     | \+/\+/
 Step 2 = dp[ 1, 2, 1];
-			 |\+/\+/
+             |\+/\+/
 Step 3 = dp[ 1,3, 3];
 
 Step 4 = return 3
