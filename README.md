@@ -29,7 +29,7 @@
 ## Links to the given Genres:
 [Apni Kaksha](https://github.com/kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit/tree/main/Apni_Kaksha)
 
-[Competitive rogramming](https://github.com/kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit/tree/main/Competitive_Programming)
+[Competitive Programming](https://github.com/kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit/tree/main/Competitive_Programming)
 
 [Pep Coding](https://github.com/kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit/tree/main/Pep_Coding)
 
