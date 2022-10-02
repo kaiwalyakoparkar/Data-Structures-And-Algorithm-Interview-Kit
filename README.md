@@ -41,7 +41,12 @@
 
 [QuickRecall](https://github.com/kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit/tree/main/QuickRecall)
 
+***
+<h1 align="center">Made with ❤️ by awesome contributors</h1>
+	
+
 ## Credits:
 <a href="https://github.com/kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit" />
 </a>
+
