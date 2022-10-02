@@ -42,7 +42,7 @@
 [QuickRecall](https://github.com/kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit/tree/main/QuickRecall)
 
 ***
-<h1 align="center">Made with ❤️ by KAIWALYA </h1>
+<h1 align="center">Made with ❤️ by AWESOME CONTRIBUTORS </h1>
 	
 
 ## Credits:
