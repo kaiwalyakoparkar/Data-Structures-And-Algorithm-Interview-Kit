@@ -1,23 +1,36 @@
-# Contributing
+🤝 Contribution Guidelines
 
-Thank you for considering and taking the time to contribute! Product focuses on 100% education as well as upskilling developing countries and rural areas.
+Contributions are welcome and appreciated! 🎉
 
-The following are guidelines for contributing to this project.
+To contribute:
 
-## How to Report Bugs
+Fork the repository
 
-Please open [a new issue in the appropriate GitHub repository][new-issue] with steps to reproduce the problem you're experiencing.
+Create a new branch:
 
-Be sure to include as much information including screenshots, text output, and both your expected and actual results.
+git checkout -b feature-name
 
-## How to Request Enhancements
 
-First, please refer to the applicable [GitHub repository][github-repo] and search [the repository's GitHub issues][issues-list] to make sure your idea has not been (or is not still) considered.
+Make your changes
 
-Then, please [create a new issue in the GitHub repository][new-issue] describing your enhancement.
+Commit and push your code
 
-Be sure to include as much detail as possible including step-by-step descriptions, specific examples, screenshots or mockups, and reasoning for why the enhancement might be worthwhile.
+Open a Pull Request with a clear description
 
-[new-issue]: https://github.com/kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit/issues/new
-[github-repo]: https://github.com/kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit/
-[issues-list]: https://github.com/kaiwalyakoparkar/Data-Structures-And-Algorithm-Interview-Kit/issues
+Please ensure:
+
+Code is clean and readable
+
+Folder structure is maintained
+
+Proper naming conventions are followed
+
+🌟 Why Contribute?
+
+Improve Git and GitHub skills
+
+Build a strong open-source profile
+
+Help others learn Data Structures and Algorithms
+
+Gain real-world collaboration experience
